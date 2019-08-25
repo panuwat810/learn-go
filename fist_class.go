@@ -1,9 +1,11 @@
 package main
 
+import "fmt"
+
 func main() {
-	showMe := func() {
-		println("My name is panuwat")
+	showMe := func(a, b int) {
+		fmt.Printf("sum := %d", a+b)
 	}
 
-	showMe()
+	showMe(1, 2)
 }
