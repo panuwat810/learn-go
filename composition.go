@@ -8,8 +8,8 @@ type User struct {
 }
 
 type Player struct {
-	Id, GameId     int
-	Name, Location string
+	User
+	GameId int
 }
 
 func main() {
