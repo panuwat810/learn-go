@@ -7,13 +7,13 @@ type Artist struct {
 	Songs       int
 }
 
-func newRelease(a Artist) int {
+func newRelease(a *Artist) int {
 	a.Songs++
 	return a.Songs
 }
 
 func main() {
-	me := Artist{Name: "panuwat", Genre: "Electro", Songs: 42}
+	me := &Artist{Name: "panuwat", Genre: "Electro", Songs: 42}
 	fmt.Printf("%s released their %dth songs\n", me.Name, newRelease(me))
 	fmt.Printf("%s has a total of %d songs", me.Name, me.Songs)
 }
