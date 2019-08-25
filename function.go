@@ -1,9 +1,10 @@
 package main
 
-func add(x, y int) int {
-	return x + y
+func swap(x, y int) (int, int) {
+	return y, x
 }
 
 func main() {
-	println(add(42, 13))
+	a, b := swap(42, 13)
+	println(a, b)
 }
