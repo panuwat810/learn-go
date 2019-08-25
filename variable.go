@@ -1,9 +1,9 @@
 package main
 
-var (
-	name, location     string
-	age      int
-)
+var name string
+var age int
+var location string
+
 
 func main() {
 	name, age, location = "panuwat", 36, "Sarakam"
