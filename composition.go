@@ -7,6 +7,10 @@ type User struct {
 	Name, Location string
 }
 
+func (u *User) Greetings() string {
+	return fmt.Sprintf("Hi %s, from %s", u.Name, u.Location)
+}
+
 type Player struct {
 	User
 	GameId int
@@ -18,5 +22,5 @@ func main() {
 		90404,
 	}
 
-	fmt.Printf("%+v", p)
+	println(p.Greetings())
 }
