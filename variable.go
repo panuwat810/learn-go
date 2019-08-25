@@ -1,9 +1,8 @@
 package main
 
 var (
-	name     string
+	name, location     string
 	age      int
-	location string
 )
 
 func main() {
